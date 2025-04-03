@@ -3,307 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="images/png" href="images/Myntra_Logo.png">
+    <title>Venmoo 24/7 - Hair Salon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header-section">
-        <div class="menu-bar">
-            <div class="logo">
-                <img src="images/Myntra_Logo.png" alt="">
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#">MEN</a></li>
-                    <li><a href="#">WOMEN</a></li>
-                    <li><a href="#">KIDS</a></li>
-                    <li><a href="#">HOME & LIVING</a></li>
-                    <li><a href="#">BEAUTY</a></li>
-                    <li><a href="#">STUDIO</a><span>NEW</span></li>
-                </ul>
-            </div>
-            <div class="search-bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" placeholder="Search for products,brand and more">
-            </div>
-            <div class="head-icons">
-                <div class="icon">
-                    <i class="fa-regular fa-user"></i>
-                    <p>Profile</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <p>WishList</p>
-                </div>
-                <div class="icon">
-                    <a href="add bag item.html">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <p>Bag</p><span class="bagItemCount">0</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
+    <header>
+        <h1>Welcome to Venmoo 24/7 Hair Salon</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-
-    <div class="side-bar">
-        <div class="side-bar-filter">
-            <div class="category filt">
-                <h4>Category</h4>
-                <div class="categ-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>T-shirt</p>
-                    <small class="qty">(100)</small>
-                </div>
-                <div class="categ-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Lounge T-shirt</p>
-                    <small class="qty">(100)</small>
-                </div>
-            </div>
-
-
-            <div class="brand filt">
-                <h4>Brand</h4>
-                <div class="brand-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Tommy Hilfiger</p>
-                    <small class="qty">(100)</small>
-                </div>
-                <div class="brand-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Frisker</p>
-                    <small class="qty">(100)</small>
-                </div>
-                <div class="brand-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>WROGN</p>
-                    <small class="qty">(100)</small>
-                </div>
-                <div class="brand-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Jack & Jones</p>
-                    <small class="qty">(100)</small>
-                </div>
-                <div class="brand-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Frisker</p>
-                    <small class="qty">(100)</small>
-                </div>
-                <div class="brand-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>WROGN</p>
-                    <small class="qty">(100)</small>
-                </div>
-                <div class="brand-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Jack & Jones</p>
-                    <small class="qty">(100)</small>
-                </div>
-                <div class="brand-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Frisker</p>
-                    <small class="qty">(100)</small>
-                </div>
-            </div>
-
-            <div class="prices filt">
-                <h4>Price</h4>
-                <div class="price-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Rs. 299 to Rs. 1099</p>
-                    <small>(50)</small>
-                </div>
-                <div class="price-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Rs. 299 to Rs. 1099</p>
-                    <small>(50)</small>
-                </div>
-                <div class="price-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Rs. 299 to Rs. 1099</p>
-                    <small>(50)</small>
-                </div>
-                <div class="price-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>Rs. 299 to Rs. 1099</p>
-                    <small>(50)</small>
-                </div>
-            </div>
-
-            <div class="color filt">
-                <h4>Colors</h4>
-                <div class="color-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <div class="color" style="padding: 5px 8px; border-radius: 50%; background-color: white; margin-right: 6px; border: 1px solid grey;"></div>
-                    <p>White</p>
-                    <small>(50)</small>
-                </div>
-                <div class="color-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <div class="color" style="padding: 5px 8px; border-radius: 50%; background-color: yellow; margin-right: 6px; border: 1px solid grey;"></div>
-                    <p>Yellow</p>
-                    <small>(50)</small>
-                </div>
-                <div class="color-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <div class="color" style="padding: 5px 8px; border-radius: 50%; background-color: orange; margin-right: 6px; border: 1px solid grey;"></div>
-                    <p>Orange</p>
-                    <small>(50)</small>
-                </div>
-                <div class="color-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <div class="color" style="padding: 5px 8px; border-radius: 50%; background-color: green; margin-right: 6px; border: 1px solid grey;"></div>
-                    <p>Green</p>
-                    <small>(50)</small>
-                </div>
-                <div class="color-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <div class="color" style="padding: 5px 8px; border-radius: 50%; background-color: red; margin-right: 6px; border: 1px solid grey;"></div>
-                    <p>Red</p>
-                    <small>(50)</small>
-                </div>
-                <div class="color-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <div class="color" style="padding: 5px 8px; border-radius: 50%; background-color: blue; margin-right: 6px; border: 1px solid grey;"></div>
-                    <p>Blue</p>
-                    <small>(50)</small>
-                </div>
-                <div class="color-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <div class="color" style="padding: 5px 8px; border-radius: 50%; background-color: black; margin-right: 6px; border: 1px solid grey;"></div>
-                    <p>Black</p>
-                    <small>(50)</small>
-                </div>
-            </div>
-
-
-            <div class="discount-range filt">
-                <h4>Discount Range</h4>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>10% and above</p>
-                </div>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>20% and above</p>
-                </div>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>30% and above</p>
-                </div>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>40% and above</p>
-                </div>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>50% and above</p>
-                </div>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>60% and above</p>
-                </div>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>70% and above</p>
-                </div>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>80% and above</p>
-                </div>
-                <div class="dis-range-content content">
-                    <div class="check">
-                        <input type="checkbox">
-                    </div>
-                    <p>90% and above</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="product-item">
-            <!-- <div class="card">
-                <img src="images.jpeg">
-                <div class="rating">
-                    4.5 ⭐ | 1.4k
-                </div>
-                <h3 class="company">ADIDAS</h3>
-                <p class="item-name">Pure Cotton T-shirt</p>
-                <div class="price">
-                    <span class="current-price">Rs.999</span>
-                    <span class="original-price">Rs.1045</span>
-                    <span class="discount-price">(42% OFF)</span>
-                </div>
-                <button class="add-to-cart">Add to Cart</button>
-            </div> -->
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Venmoo 24/7 is your go-to salon for trendy haircuts, styling, and beauty treatments at any time of the day.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Haircuts & Styling</li>
+            <li>Hair Coloring</li>
+            <li>Scalp Treatments</li>
+            <li>Men's Grooming</li>
+            <li>Bridal & Event Styling</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@venmoo247.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Beauty Street, Glamour City</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Venmoo 24/7 Hair Salon. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
