@@ -6,8 +6,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #f8f9fa;
-    height: 100vh;
-    overflow: hidden; /* Prevents scrolling */
+    height: auto;
+    /* overflow: hidden; Prevents scrolling */
     margin: 0; /* Removes any extra margins */
 }
 
@@ -52,10 +52,12 @@ html {
     padding: 20px;
     border-radius: 8px;
     width: 800px;
+    /* height: 600px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -94,20 +96,23 @@ html {
 }
 #form-step{
     font-size: 30px; /* Increase this value as needed */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
   }
   
 
 /* Input Fields */
 input, select {
-    width: 100%;
+    width: 60%;
     padding: 15px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #aaa9a9;
     border-radius: 5px;
 }
-input{
-    width: 60%;
-}
+
 
 input[type="range"] {
     -webkit-appearance: none; /* Removes default styling */
@@ -191,6 +196,7 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    width: 40%;
 }
 
 .button-group button {
@@ -275,8 +281,7 @@ select:focus {
     color: #666;
     border-top: 1px solid #ddd;
     width: 60%;
-    position: absolute;
-    bottom: 0;
+    margin-top: 20px;
 }
 
 .footer-links {
@@ -348,3 +353,154 @@ select:focus {
     border-radius: 5px;
     cursor: pointer;
   }
+
+  /* Medium Devices (Tablets and below) */
+@media screen and (max-width: 768px) {
+    .top-header {
+      gap: 10px;
+      padding: 5px;
+    }
+  
+    .logo {
+      width: 200px;
+      height: 50px;
+    }
+  
+    .form-container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .question {
+      font-size: 22px;
+    }
+  
+    #form-step {
+      font-size: 24px;
+      width: 100%;
+    }
+  
+    .progress-bar-container {
+      width: 90%;
+    }
+  
+    input,
+    select {
+      width: 90%;
+    }
+  
+    input[type="range"] {
+      width: 100%;
+    }
+  
+    .range-btw p {
+      font-size: 12px;
+    }
+  
+    .option-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .option-box {
+      width: 100%;
+      height: auto;
+      padding: 12px;
+      font-size: 16px;
+      min-height: 80px;
+    }
+  
+    .icon {
+      font-size: 24px;
+    }
+  
+    .list-option {
+      width: 90%;
+    }
+  
+    .button-group {
+      width: 100%;
+    }
+  
+    .button-group button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .footer {
+      width: 95%;
+      font-size: 11px;
+      padding: 15px;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .popup-content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .popup-content h2 {
+      font-size: 18px;
+    }
+  
+    #close-popup {
+      width: 100%;
+    }
+  }
+  
+  /* Small Devices (Phones) */
+  @media screen and (max-width: 480px) {
+    .logo {
+      width: 160px;
+      height: 40px;
+    }
+  
+    .question {
+      font-size: 20px;
+    }
+  
+    #form-step {
+      font-size: 20px;
+    }
+  
+    .progress-bar-container {
+      width: 100%;
+    }
+  
+    .option-box {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .list-option {
+      font-size: 16px;
+    }
+  
+    .button-group button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .footer {
+      font-size: 10px;
+      padding: 10px;
+    }
+  
+    .footer-links a {
+      font-size: 11px;
+    }
+  
+    .popup-content h2 {
+      font-size: 16px;
+    }
+  
+    #close-popup {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
